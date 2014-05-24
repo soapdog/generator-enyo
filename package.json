@@ -4,7 +4,10 @@
   "description": "Yeoman generator",
   "license": "MIT",
   "main": "app/index.js",
-  "repository": "soapdog/generator-enyo",
+  "repository": {
+      "type": "git",
+      "url": "git://github.com/soapdog/generator-enyo.git"
+  },
   "author": {
     "name": "Andre Alves Garzia",
     "email": "contato@andregarzia.com",
@@ -21,7 +24,8 @@
   ],
   "keywords": [
     "yeoman-generator",
-	"enyo"
+	"enyo",
+    "enyojs"
   ],
   "dependencies": {
     "yeoman-generator": "~0.16.0",
