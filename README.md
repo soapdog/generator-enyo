@@ -9,7 +9,10 @@
 
 ![EnyoJS Logo](http://i.imgur.com/70naxce.png)
 
-[EnyoJS](http://www.enyojs.com) is a fantastic multiplatform HTML5 framework for creating apps!
+[EnyoJS](http://www.enyojs.com) a framework for building native-quality HTML5 apps that run everywhere!
+
+Check out [the documentation](http://enyojs.com/docs) for more information. Browse [the sampler demo](http://enyojs.com/sampler)
+for a glance of what is possible and take a look and the [community gallery](http://enyojs.com/gallery) for reusable components
 
 ### What is Yeoman?
 
@@ -35,9 +38,11 @@ To install generator-enyo from npm, run:
 $ npm install -g generator-enyo
 ```
 
-Finally, initiate the generator:
+Finally, initiate the generator inside your empty project directory:
 
 ```bash
+$ mkdir my-cool-project
+$ cd my-cool-project
 $ yo enyo
 ```
 
