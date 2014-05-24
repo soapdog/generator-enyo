@@ -1,0 +1,3 @@
+[submodule "app/templates/bootplate"]
+	path = app/templates/bootplate
+	url = https://github.com/enyojs/bootplate.git
