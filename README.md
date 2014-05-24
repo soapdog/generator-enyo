@@ -5,6 +5,12 @@
 
 ## Getting Started
 
+### What is EnyoJS
+
+[EnyoJS Logo](http://i.imgur.com/70naxce.png)
+
+[EnyoJS](http://www.enyojs.com) is a fantastic multiplatform HTML5 framework for creating apps!
+
 ### What is Yeoman?
 
 Trick question. It's not a thing. It's this guy:
@@ -44,6 +50,23 @@ $ bower install webOS-ports/webos-lib
 ```
 
 Remember to add the lib to your **package.js**
+
+### Running a local server
+
+The gruntfile comes with the connect task already set up. You can use it to launch a local server pointed at the deploy
+folder or pointed to root folder.
+
+```bash
+$ grunt connect:debug
+```
+
+or
+
+```bash
+$ grunt connect:deploy
+```
+
+This makes testing your Enyo project much easier.
 
 ### Getting To Know Yeoman
 

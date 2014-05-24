@@ -24,28 +24,15 @@ var EnyoGenerator = yeoman.generators.Base.extend({
 
         this.copy('_package.json', 'package.json');
         this.copy('_bower.json', 'bower.json');
+        this.copy("_gruntfile.js", "Gruntfile.js");
+        this.copy('editorconfig', '.editorconfig');
+        this.copy('bowerrc', '.bowerrc');
+
     },
 
     bootplate: function() {
-        var files = this.expandFiles('**/*', {cwd: this.sourceRoot() + "/bootplate", dot: true});
-        var ignores = [
-            '.git',
-            'LICENSE',
-            'README.md'
-        ];
+        this.directory('bootplate','.');
 
-        files.forEach(function(file) {
-            if (ignores.indexOf(file) !== -1) {
-                return;
-            }
-
-            this.copy("bootplate/" + file, file);
-        }, this);
-    },
-
-    projectfiles: function () {
-        this.copy('editorconfig', '.editorconfig');
-        this.copy('bowerrc', '.bowerrc');
     }
 });
 
