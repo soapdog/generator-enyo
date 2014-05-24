@@ -7,7 +7,7 @@
 
 ### What is EnyoJS
 
-[EnyoJS Logo](http://i.imgur.com/70naxce.png)
+![EnyoJS Logo](http://i.imgur.com/70naxce.png)
 
 [EnyoJS](http://www.enyojs.com) is a fantastic multiplatform HTML5 framework for creating apps!
 
