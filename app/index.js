@@ -19,7 +19,7 @@ var EnyoGenerator = yeoman.generators.Base.extend({
     },
 
     app: function () {
-        this.log(yosay('Welcome to the marvelous Enyo generator!'));
+        this.log(yosay('Welcome to the marvelous Enyo JS generator!'));
 
 
         this.copy('_package.json', 'package.json');
