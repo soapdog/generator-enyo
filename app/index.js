@@ -5,20 +5,15 @@ var yeoman = require('yeoman-generator');
 var yosay = require('yosay');
 var chalk = require('chalk');
 var fs = require('fs');
+var url = "http://enyojs.com/archive/bootplate-2.4.0.zip";
+
 
 
 var EnyoGenerator = yeoman.generators.Base.extend({
-    init: function () {
-        this.pkg = require('../package.json');
-
-        this.on('end', function () {
-            if (!this.options['skip-install']) {
-                this.installDependencies();
-            }
-        });
-    },
 
     app: function () {
+        var cb = this.async();
+
         this.log(yosay('Welcome to the marvelous Enyo JS generator!'));
 
 
@@ -28,10 +23,16 @@ var EnyoGenerator = yeoman.generators.Base.extend({
         this.copy('editorconfig', '.editorconfig');
         this.copy('bowerrc', '.bowerrc');
 
-    },
+        this.extract(url, ".", function() {
+            this.log("Bootplate installed.");
+            cb();
+        }.bind(this));
 
-    bootplate: function() {
-        this.directory('bootplate','.');
+        this.on('end', function () {
+            if (!this.options['skip-install']) {
+                this.installDependencies();
+            }
+        });
 
     }
 });
